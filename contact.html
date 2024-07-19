@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Mrs. Anna</title>
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+    <style>
+        body {
+            font-family: "Century Gothic", sans-serif; 
+            margin: 0;
+            padding: 0;
+            background: url('images/background.jpg') no-repeat center center fixed;
+            background-color: #f4f4f4;
+            background-size: cover;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        header img {
+            width: 38%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 45px;
+            border: 5px solid rgb(90, 92, 86);
+        }
+        .social-links {
+            display: flex;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        .social-icon {
+            margin-left: 10px;
+        }
+        .social-icon img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .nav-bar {
+            background-color: #ffffff;
+            border: 3px solid rgb(159, 233, 74);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .nav-bar a {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(116, 177, 58);
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .nav-bar a:hover {
+            background-color: rgb(159, 233, 74);
+            color: #ffffff;
+        }
+        .contact-section {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 20px; 
+            padding: 20px; 
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border: 3px solid rgb(124, 233, 74);
+            margin-bottom: 100px;
+        }
+        .contact-form {
+            flex: 1;
+            text-align: left;
+            max-width: 60%;
+            font-weight: bold;
+        }
+        .contact-form h2 {
+            margin-top: 0;
+            padding: 10px;
+            background-color: rgb(104, 197, 104);
+            color: #ffffff;
+            border-radius: 20px;
+            border: 3px solid rgb(159, 233, 74);
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid rgb(159, 233, 74);
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        .contact-form textarea {
+            height: 100px;
+            resize: none;
+        }
+        .contact-form button {
+            background-color: rgb(159, 233, 74);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: rgb(116, 177, 58);
+        }
+        footer {
+            background: #706f72;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="social-links">
+        <a href="www.instagram.com" class="social-icon"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="www.facebook.com" class="social-icon"><img src="images/instagram.png" alt="Instagram"></a>
+    </div>
+    <header>
+        <img src="images/logo.jpg" alt="Logo">
+    </header>
+    <div class="container">
+        <div class="nav-bar">
+            <a href="main.html">Home</a>
+            <a href="about.html">About Mrs. Anna</a>
+            <a href="class.html">About Classes</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <section id="contact" class="contact-section">
+            <div class="contact-form">
+                <h2>Contact Mrs. Anna</h2>
+                <form>
+                    <label for="student-name">Student Name</label>
+                    <input type="text" id="student-name" name="student-name" required>
+                    
+                    <label for="student-age">Student Age</label>
+                    <input type="text" id="student-age" name="student-age" required>
+                    
+                    <label for="student-email">Student Email</label>
+                    <input type="email" id="student-email" name="student-email" required>
+                    
+                    <label for="parent-name">Parent Name (If applies)</label>
+                    <input type="text" id="parent-name" name="parent-name">
+                    
+                    <label for="parent-email">Parent Email (If applies)</label>
+                    <input type="email" id="parent-email" name="parent-email">
+                    
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Anna's Russian Class. All rights reserved. Designed by Dreymeister</p>
+    </footer>
+</body>
+</html>

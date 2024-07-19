@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+    <style>
+        body {
+            font-family: "Century Gothic", sans-serif; 
+            margin: 0;
+            padding: 0;
+            background: url('images/background.jpg') no-repeat center center fixed;
+            background-color: #f4f4f4;
+            background-size: cover;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        header img {
+            width: 38%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 45px;
+            border: 5px solid rgb(90, 92, 86);
+        }
+        .social-links {
+            display: flex;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        .social-icon {
+            margin-left: 10px;
+        }
+        .social-icon img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .nav-bar {
+            background-color: #ffffff;
+            border: 3px solid rgb(159, 233, 74);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .nav-bar a {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(116, 177, 58);
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .nav-bar a:hover {
+            background-color: rgb(159, 233, 74);
+            color: #ffffff;
+        }
+        .resources-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .resource {
+            text-align: center;
+            max-width: 300px;
+            border: 3px solid rgb(159, 233, 74);
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .resource img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .resource a {
+            display: block;
+            margin-top: 10px;
+            font-size: 18px;
+            color: rgb(116, 177, 58);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .resource a:hover {
+            color: rgb(159, 233, 74);
+        }
+        footer {
+            background: #706f72;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="social-links">
+        <a href="https://www.instagram.com" class="social-icon"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="https://www.facebook.com" class="social-icon"><img src="images/instagram.png" alt="Instagram"></a>
+    </div>
+    <header>
+        <img src="images/logo.jpg" alt="Logo">
+    </header>
+    <div class="container">
+        <div class="nav-bar">
+            <a href="main.html">Home</a>
+            <a href="about.html">About Mrs. Anna</a>
+            <a href="class.html">About Classes</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <section class="resources-section">
+            <div class="resource">
+                <img src="images/textbook1.jpg" alt="Textbook 1">
+                <a href="https://example.com/textbook1" target="_blank">Buy Textbook 1</a>
+            </div>
+            <div class="resource">
+                <img src="images/textbook2.jpg" alt="Textbook 2">
+                <a href="https://example.com/textbook2" target="_blank">Buy Textbook 2</a>
+            </div>
+            <div class="resource">
+                <img src="images/materials1.jpg" alt="Materials 1">
+                <a href="https://example.com/materials1" target="_blank">Buy Materials 1</a>
+            </div>
+            <div class="resource">
+                <img src="images/materials2.jpg" alt="Materials 2">
+                <a href="https://example.com/materials2" target="_blank">Buy Materials 2</a>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Anna's Russian Class. All rights reserved. Designed by Dreymeister</p>
+    </footer>
+</body>
+</html>
