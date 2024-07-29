@@ -132,17 +132,50 @@
         }
         @media (max-width: 768px) {
             header img {
-                width: 50%;
-            }
-            .button-container a {
-                padding: 15px 30px;
-                font-size: 18px;
-            }
-            nav a {
-                padding: 10px 15px;
-                font-size: 16px;
-            }
+            width: 50%;
         }
+        .nav-bar a {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .text-content, .image-container {
+            max-width: 100%; 
+            flex-basis: 100%;
+            margin-right: 0; 
+        }
+        .text-content h2 {
+            font-size: 20px;
+        }
+        .text-content p {
+            font-size: 16px;
+        }
+        .image-container img {
+            margin-left: 0; 
+            margin-bottom: 20px;
+        }
+        }
+
+        @media (max-width: 480px) {
+            header img {
+            width: 60%;
+        }
+        .nav-bar a {
+        font-size: 14px;
+        }
+        .text-content h2 {
+        font-size: 18px; 
+        }
+        .text-content p {
+        font-size: 14px;
+        }
+        .social-icon img {
+        width: 30px;
+        height: 30px;
+        }
+        footer {
+        font-size: 14px;
+        }
+    }
     </style>
 </head>
 <body>
@@ -189,7 +222,7 @@
         </section>
     </div>
     <footer>
-        <p>&copy; 2024 Anna's Russian Class. All rights reserved. Designed by Dreymeister</p>
+        <p>&copy; 2024 Anna's Russian Class. All rights reserved. Designed by <a href="https://github.com/Dreymeister" target="_blank">Dreymeister</a></p>
     </footer>
 </body>
 </html>
