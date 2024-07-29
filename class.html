@@ -135,53 +135,60 @@
         a:hover {
             color: rgb(159, 233, 74);
         }
-        @media (max-width: 768px) {
-            header img {
-            width: 50%;
-        }
-        .nav-bar a {
-            padding: 10px;
-            font-size: 16px;
-        }
-        .text-content, .image-container {
-            max-width: 100%; 
-            flex-basis: 100%;
-            margin-right: 0; 
-        }
-        .text-content h2 {
-            font-size: 20px;
-        }
-        .text-content p {
-            font-size: 16px;
-        }
-        .image-container img {
-            margin-left: 0; 
-            margin-bottom: 20px;
-        }
-        }
 
-        @media (max-width: 480px) {
-            header img {
-            width: 60%;
-        }
-        .nav-bar a {
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+    header img {
+        width: 50%;
+    }
+    .nav-bar a {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .welcome-section {
+        flex-direction: column;
+    }
+    .text-content, .image-container {
+        max-width: 100%;
+        flex-basis: auto;
+        margin-right: 0;
+    }
+    .image-container img {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .text-content h2 {
+        font-size: 20px;
+    }
+    .text-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 60%;
+    }
+    .nav-bar a {
         font-size: 14px;
-        }
-        .text-content h2 {
-        font-size: 18px; 
-        }
-        .text-content p {
+    }
+    .text-content h2 {
+        font-size: 18px;
+    }
+    .text-content p {
         font-size: 14px;
-        }
-        .social-icon img {
+    }
+    .social-icon img {
         width: 30px;
         height: 30px;
-        }
-        footer {
+    }
+    footer {
         font-size: 14px;
         position: relative;
-        }
     }
+}
+
+
     </style>
 </head>
 <body>
